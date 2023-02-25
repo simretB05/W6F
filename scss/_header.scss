@@ -1,0 +1,40 @@
+#header {
+  min-height: 13vh;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
+  padding: 32px;
+
+  .logo {
+    color: #c9c9c9;
+    justify-self: start;
+  }
+  .nav {
+    justify-self: end;
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+@media only screen and (min-width: 600px) {
+}
+@media only screen and (min-width: 1000px) {
+  #header {
+    padding: 36px;
+    .logo {
+      display: grid;
+      place-items: center;
+      grid-template-columns: 280px;
+      width: 100%;
+      max-width: 360px;
+    }
+    .nav {
+      display: grid;
+      place-items: center;
+      grid-template-columns: 552px;
+      width: 100%;
+      max-width: 360px;
+    }
+  }
+}

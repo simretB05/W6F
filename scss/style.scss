@@ -1,0 +1,177 @@
+@use "header";
+@use "footer";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+}
+#main {
+  display: grid;
+  place-items: center;
+  min-height: 70vh;
+  padding: 32px;
+}
+
+.main-profile {
+  display: grid;
+  min-height: 10vh;
+
+  .profile-title {
+    font-size: 2rem;
+    justify-self: start;
+    font-style: italic;
+  }
+  .profile-intro {
+    justify-items: start;
+    font-size: 0.9rem;
+    text-align: start;
+  }
+}
+
+.about {
+  .about-card {
+    .about-title {
+      font-style: italic;
+      font-size: 1.1rem;
+      justify-self: start;
+    }
+    .about-body {
+      justify-items: start;
+      font-size: 1rem;
+      text-align: start;
+      line-height: 30.7px;
+      font-weight: 500;
+    }
+  }
+}
+.about-card * {
+  margin-top: 32px;
+}
+.img-holder {
+  margin: 32px;
+
+  img {
+    display: grid;
+    place-items: center;
+    max-width: 238px;
+    height: 238px;
+    border-radius: 50%;
+  }
+}
+.detail {
+  margin-top: 32px;
+  display: grid;
+  place-items: center;
+  .detail-title {
+    font-size: 1rem;
+    justify-self: start;
+    margin-top: 16px;
+    font-style: italic;
+    align-self: end;
+  }
+  .detail-list {
+    list-style: none;
+    margin-top: 15px;
+    justify-self: start;
+
+    .detailList-item > p {
+      font-weight: 600;
+    }
+    li {
+      margin-top: 20px;
+    }
+    li p > span {
+      font-weight: 100;
+      margin-top: 48px;
+      padding-top: 48px;
+    }
+  }
+}
+.social {
+  display: grid;
+  place-items: center;
+  justify-self: start;
+  min-height: 10vh;
+
+  .social-list {
+    display: grid;
+    list-style: none;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    justify-self: start;
+    align-self: end;
+
+    li {
+      margin-right: 9px;
+      justify-self: start;
+    }
+    li > a img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .profile {
+    display: grid;
+    place-items: center;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .main-profile {
+    display: grid;
+    min-height: 10vh;
+
+    .profile-title {
+      font-size: 1.3rem;
+      justify-self: center;
+    }
+    .profile-intro {
+      font-size: 0.91rem;
+      text-align: center;
+    }
+  }
+
+  .about {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .about.about-card {
+      .about-title {
+        font-size: 1.1rem;
+        justify-self: start;
+      }
+      .about-body {
+        justify-items: start;
+        font-size: 0.91rem;
+        text-align: start;
+        line-height: 30.7px;
+        font-weight: 500;
+      }
+    }
+  }
+  .about-card * {
+    margin-top: 32px;
+  }
+  .img-holder {
+    align-self: end;
+    img {
+      display: grid;
+      place-items: center;
+      max-width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
+  }
+
+  .detail .detail-title {
+    font-size: 0.9rem;
+    justify-self: start;
+    align-self: end;
+  }
+}

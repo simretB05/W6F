@@ -1,0 +1,16 @@
+#footer {
+  min-height: 17vh;
+  background-color: black;
+  display: grid;
+  place-items: center;
+  .footer-body {
+    width: 80%;
+    color: white;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  #footer .footer-body {
+    width: 35%;
+  }
+}
